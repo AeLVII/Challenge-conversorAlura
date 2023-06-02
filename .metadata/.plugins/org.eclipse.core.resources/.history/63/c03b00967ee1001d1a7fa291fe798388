@@ -1,0 +1,73 @@
+package Convertidor;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JComboBox;
+import java.awt.Font;
+import javax.swing.SwingConstants;
+import java.awt.FlowLayout;
+import javax.swing.SpringLayout;
+import javax.swing.JTextField;
+
+public class Formulario {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Formulario window = new Formulario();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Formulario() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 166);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("CONVERSOR");
+		lblNewLabel.setFont(new Font("Tempus Sans ITC", Font.BOLD, 19));
+		lblNewLabel.setBounds(147, 11, 127, 32);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setEditable(true);
+		comboBox.setBounds(195, 54, 202, 22);
+		frame.getContentPane().add(comboBox);
+		
+		JLabel lblNewLabel_1 = new JLabel("Seleccione tipo de conversion");
+		lblNewLabel_1.setBounds(29, 58, 156, 14);
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		JButton btnNewButton = new JButton("Siguiente");
+		btnNewButton.setBounds(170, 87, 89, 23);
+		frame.getContentPane().add(btnNewButton);
+	}
+}

@@ -1,0 +1,38 @@
+package Convertidor;
+
+public class ConvertMoneda {
+	private double valorIn;
+	private double valorOut;
+	
+	public ConvertMoneda() {
+		
+	}
+	public void setValorIn(double valorIn) {
+		this.valorIn = valorIn;
+	}
+	public double getValorIn() {
+		return valorIn;
+	}
+	public void setValorOut(double valorOut) {
+		this.valorOut = valorOut;
+	}
+	public double getValorOut() {
+		return valorOut;
+	}
+	
+	public double conSolDolar(double valorIn) {
+		this.valorIn=valorIn;
+		this.valorOut=this.valorIn*0.27;
+		return valorOut;	
+	}
+	public double conSolEuro(double valorIn) {
+		this.valorIn=valorIn;
+		this.valorOut=this.valorIn*0.24;
+		return valorOut;	
+	}
+	public double conSolBolivianos(double valorIn) {
+		this.valorIn=valorIn;
+		this.valorOut=this.valorIn*1.84;
+		return valorOut;	
+	}
+}

@@ -1,0 +1,49 @@
+package Convertidor;
+
+public class ConvertTemperatura {
+	private double TempIn;
+	private double TempOut;
+	
+	public ConvertTemperatura() {
+		
+	}
+public void setTempIn(double tempIn) {
+	TempIn = tempIn;
+}
+public double getTempIn() {
+	return TempIn;
+}
+
+	
+	public double conSolDolar(double valorIn) {
+		this.valorIn=valorIn;
+		this.valorOut=this.valorIn*0.27;
+		return valorOut;	
+	}
+	public double conSolEuro(double valorIn) {
+		this.valorIn=valorIn;
+		this.valorOut=this.valorIn*0.24;
+		return valorOut;	
+	}
+	public double conSolBoliviano(double valorIn) {
+		this.valorIn=valorIn;
+		this.valorOut=this.valorIn*1.84;
+		return valorOut;	
+	}
+	public double conDolarSol(double valorIn) {
+		this.valorIn=valorIn;
+		this.valorOut=this.valorIn*3.76;
+		return valorOut;	
+	}
+	public double conEuroSol(double valorIn) {
+		this.valorIn=valorIn;
+		this.valorOut=this.valorIn*4.17;
+		return valorOut;	
+	}
+	public double conBolivianoSol(double valorIn) {
+		this.valorIn=valorIn;
+		this.valorOut=this.valorIn*0.55;
+		return valorOut;	
+	}
+	
+}

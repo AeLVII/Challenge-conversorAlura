@@ -1,0 +1,54 @@
+package Convertidor;
+
+public class ConvertTemperatura {
+	private double TempIn;
+	private double TempOut;
+	
+	public ConvertTemperatura() {
+		
+	}
+	public void setTempIn(double tempIn) {
+		TempIn = tempIn;
+	}
+	public double getTempIn() {
+		return TempIn;
+	}
+	public void setTempOut(double tempOut) {
+		TempOut = tempOut;
+	}
+	public double getTempOut() {
+		return TempOut;
+	}
+	
+	public double conCelFar(double tempIn) {
+		this.TempIn=tempIn;
+		this.TempOut=this.TempIn*0.27;
+		return TempOut;	
+	}
+	public double conCelKel(double tempIn) {
+		this.TempIn=tempIn;
+		this.TempOut=this.TempIn*0.24;
+		return TempOut;	
+	}
+	public double conFarCel(double tempIn) {
+		this.TempIn=tempIn;
+		this.TempOut=this.TempIn*1.84;
+		return TempOut;	
+	}
+	public double conFarKel(double tempIn) {
+		this.TempIn=tempIn;
+		this.TempOut=this.TempIn*3.76;
+		return TempOut;	
+	}
+	public double conKelCel(double tempIn) {
+		this.TempIn=tempIn;
+		this.TempOut=this.TempIn*4.17;
+		return TempOut;	
+	}
+	public double conKelFar(double tempIn) {
+		this.TempIn=tempIn;
+		this.TempOut=this.TempIn*0.55;
+		return TempOut;	
+	}
+	
+}
